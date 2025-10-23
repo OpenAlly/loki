@@ -7,27 +7,26 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/MyUnisoft/loki">
-      <img src="https://img.shields.io/github/package-json/v/MyUnisoft/loki?style=for-the-badge" alt="npm version">
+    <a href="https://github.com/OpenAlly/loki">
+      <img src="https://img.shields.io/github/package-json/v/OpenAlly/loki?style=for-the-badge" alt="npm version">
     </a>
-    <a href="https://github.com/MyUnisoft/loki">
-      <img src="https://img.shields.io/github/license/MyUnisoft/loki?style=for-the-badge" alt="license">
+    <a href="https://github.com/OpenAlly/loki">
+      <img src="https://img.shields.io/github/license/OpenAlly/loki?style=for-the-badge" alt="license">
     </a>
-    <a href="https://api.securityscorecards.dev/projects/github.com/MyUnisoft/loki">
-      <img src="https://api.securityscorecards.dev/projects/github.com/MyUnisoft/loki/badge?style=for-the-badge" alt="ossf scorecard">
+    <a href="https://api.securityscorecards.dev/projects/github.com/OpenAlly/loki">
+      <img src="https://api.securityscorecards.dev/projects/github.com/OpenAlly/loki/badge?style=for-the-badge" alt="ossf scorecard">
     </a>
-    <a href="https://github.com/MyUnisoft/loki/actions?query=workflow%3A%22Node.js+CI%22">
-      <img src="https://img.shields.io/github/actions/workflow/status/MyUnisoft/loki/node.js.yml?style=for-the-badge" alt="github ci workflow">
+    <a href="https://github.com/OpenAlly/loki/actions?query=workflow%3A%22Node.js+CI%22">
+      <img src="https://img.shields.io/github/actions/workflow/status/OpenAlly/loki/node.js.yml?style=for-the-badge" alt="github ci workflow">
     </a>
-    <a href="https://github.com/MyUnisoft/loki">
-      <img src="https://img.shields.io/github/languages/code-size/MyUnisoft/loki?style=for-the-badge" alt="size">
+    <a href="https://github.com/OpenAlly/loki">
+      <img src="https://img.shields.io/github/languages/code-size/OpenAlly/loki?style=for-the-badge" alt="size">
     </a>
 </p>
 
 ## 🚧 Requirements
 
-- [Node.js](https://nodejs.org/en/) version 20 or higher
-- A [reverse-proxy](https://github.com/MyUnisoft/loki-reverse-proxy) to safely expose Loki to internet (if required).
+- [Node.js](https://nodejs.org/en/) version 24 or higher
 
 ## 🚀 Getting Started
 
@@ -133,8 +132,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/fraxken"><img src="https://avatars.githubusercontent.com/u/4438263?v=4?s=100" width="100px;" alt="Thomas.G"/><br /><sub><b>Thomas.G</b></sub></a><br /><a href="https://github.com/MyUnisoft/loki/commits?author=fraxken" title="Code">💻</a> <a href="#security-fraxken" title="Security">🛡️</a> <a href="https://github.com/MyUnisoft/loki/commits?author=fraxken" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/PierreDemailly"><img src="https://avatars.githubusercontent.com/u/39910767?v=4?s=100" width="100px;" alt="PierreDemailly"/><br /><sub><b>PierreDemailly</b></sub></a><br /><a href="https://github.com/MyUnisoft/loki/commits?author=PierreDemailly" title="Code">💻</a> <a href="https://github.com/MyUnisoft/loki/commits?author=PierreDemailly" title="Tests">⚠️</a> <a href="https://github.com/MyUnisoft/loki/commits?author=PierreDemailly" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/fraxken"><img src="https://avatars.githubusercontent.com/u/4438263?v=4?s=100" width="100px;" alt="Thomas.G"/><br /><sub><b>Thomas.G</b></sub></a><br /><a href="https://github.com/OpenAlly/loki/commits?author=fraxken" title="Code">💻</a> <a href="#security-fraxken" title="Security">🛡️</a> <a href="https://github.com/OpenAlly/loki/commits?author=fraxken" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/PierreDemailly"><img src="https://avatars.githubusercontent.com/u/39910767?v=4?s=100" width="100px;" alt="PierreDemailly"/><br /><sub><b>PierreDemailly</b></sub></a><br /><a href="https://github.com/OpenAlly/loki/commits?author=PierreDemailly" title="Code">💻</a> <a href="https://github.com/OpenAlly/loki/commits?author=PierreDemailly" title="Tests">⚠️</a> <a href="https://github.com/OpenAlly/loki/commits?author=PierreDemailly" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
