@@ -2,17 +2,17 @@
 import {
   ApiCredential,
   type ApiCredentialAuthorizationOptions
-} from "./ApiCredential.class.js";
+} from "./ApiCredential.class.ts";
 import {
   Datasources,
-  Datasource
-} from "./Datasources.class.js";
+  type Datasource
+} from "./Datasources.class.ts";
 import {
   Loki,
-  LokiLabelValuesOptions,
-  LokiLabelsOptions,
-  LokiQueryOptions
-} from "./Loki.class.js";
+  type LokiLabelValuesOptions,
+  type LokiLabelsOptions,
+  type LokiQueryOptions
+} from "./Loki.class.ts";
 
 export interface GrafanaApiOptions {
   /**

@@ -1,11 +1,11 @@
 // Import Third-party Dependencies
-import {
+import type {
   LokiLiteralPattern,
   LokiPatternType
 } from "@sigyn/pattern";
 
 // Import Internal Dependencies
-import { TimeRange } from "./utils.js";
+import type { TimeRange } from "./utils.ts";
 
 export type LokiStandardBaseResponse<S> = {
   status: "failed";

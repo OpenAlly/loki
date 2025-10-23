@@ -1,2 +1,2 @@
-export * from "./class/GrafanaApi.class.js";
-export * from "./types";
+export * from "./class/GrafanaApi.class.ts";
+export * from "./types.ts";

@@ -8,21 +8,21 @@ import {
 import {
   Pattern,
   NoopPattern,
-  LokiPatternType,
-  PatternShape
+  type LokiPatternType,
+  type PatternShape
 } from "@sigyn/pattern";
 
 // Import Internal Dependencies
-import * as utils from "../utils.js";
-import {
+import * as utils from "../utils.ts";
+import type {
   LokiStandardBaseResponse,
   RawQueryRangeResponse,
   QueryRangeLogsResponse,
   QueryRangeStreamResponse,
   QueryRangeMatrixResponse,
   LokiIngestLogs
-} from "../types.js";
-import { ApiCredential } from "./ApiCredential.class.js";
+} from "../types.ts";
+import { ApiCredential } from "./ApiCredential.class.ts";
 
 // CONSTANTS
 function kDurationTransformer(value: string | number) {

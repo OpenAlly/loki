@@ -2,7 +2,7 @@
 import * as httpie from "@openally/httpie";
 
 // Import Internal Dependencies
-import { ApiCredential } from "./ApiCredential.class.js";
+import type { ApiCredential } from "./ApiCredential.class.ts";
 
 export interface Datasource {
   id: number;

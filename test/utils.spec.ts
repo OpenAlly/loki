@@ -7,8 +7,8 @@ import dayjs from "dayjs";
 import ms from "ms";
 
 // Import Internal Dependencies
-import * as utils from "../src/utils.js";
-import { mockStreamResponse } from "./utils/logs.factory.js";
+import * as utils from "../src/utils.ts";
+import { mockStreamResponse } from "./utils/logs.factory.ts";
 
 describe("utils.durationToUnixTimestamp", () => {
   it("should return the UNIX timestamp (as number) casted as a string but with the same numeric value", () => {

@@ -1,9 +1,11 @@
 // Import Third-party Dependencies
-import dayjs, { Dayjs } from "dayjs";
-import ms from "ms";
+import dayjs, { type Dayjs } from "dayjs";
+import ms, { type StringValue } from "ms";
 
 // Import Internal Dependencies
-import { LokiMatrix, LokiStream, RawQueryRangeResponse } from "./types.js";
+import type {
+  LokiMatrix, LokiStream, RawQueryRangeResponse
+} from "./types.ts";
 
 export function durationToUnixTimestamp(duration: string | number): string {
   if (typeof duration === "number") {
@@ -14,7 +16,7 @@ export function durationToUnixTimestamp(duration: string | number): string {
   }
 
   return dayjs()
-    .subtract(ms(duration), "milliseconds")
+    .subtract(ms(duration as StringValue), "milliseconds")
     .unix()
     .toString();
 }

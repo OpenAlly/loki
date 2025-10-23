@@ -6,7 +6,7 @@ import assert from "node:assert";
 import { MockAgent, setGlobalDispatcher, getGlobalDispatcher } from "@openally/httpie";
 
 // Import Internal Dependencies
-import { GrafanaApi, Datasource } from "../src/index.js";
+import { GrafanaApi, type Datasource } from "../src/index.ts";
 
 // CONSTANTS
 const kDummyURL = "https://nodejs.org";

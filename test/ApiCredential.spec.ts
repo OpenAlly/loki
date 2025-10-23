@@ -4,7 +4,7 @@ import assert from "node:assert";
 import crypto from "node:crypto";
 
 // Import Internal Dependencies
-import { ApiCredential } from "../src/class/ApiCredential.class.js";
+import { ApiCredential } from "../src/class/ApiCredential.class.ts";
 
 describe("ApiCredential", () => {
   describe("httpOptions getter", () => {

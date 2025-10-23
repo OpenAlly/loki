@@ -8,10 +8,10 @@ import { MockAgent, setGlobalDispatcher, getGlobalDispatcher } from "@openally/h
 // Import Internal Dependencies
 import {
   GrafanaApi,
-  LokiIngestLogs,
-  LokiStandardBaseResponse
-} from "../src/index.js";
-import { mockMatrixResponse, mockStreamResponse } from "./utils/logs.factory.js";
+  type LokiIngestLogs,
+  type LokiStandardBaseResponse
+} from "../src/index.ts";
+import { mockMatrixResponse, mockStreamResponse } from "./utils/logs.factory.ts";
 
 // CONSTANTS
 const kDummyURL = "https://nodejs.org";

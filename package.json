@@ -4,6 +4,7 @@
   "description": "Node.js Grafana Loki SDK",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
+  "type": "module",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
@@ -25,7 +26,7 @@
     "build": "tsup src/index.ts --format cjs,esm --dts --clean",
     "lint": "eslint src test",
     "prepublishOnly": "npm run build",
-    "test": "glob -c \"tsx --test\" \"./test/**/*.spec.ts\"",
+    "test": "node --test ./test/**/*.spec.ts",
     "coverage": "c8 -r html npm test"
   },
   "keywords": [
@@ -41,9 +42,7 @@
     "@types/ms": "2.1.0",
     "@types/node": "24.9.1",
     "c8": "^10.1.2",
-    "glob": "^11.0.0",
     "tsup": "^8.0.2",
-    "tsx": "^4.7.1",
     "typescript": "^5.3.3"
   },
   "dependencies": {

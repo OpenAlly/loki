@@ -4,9 +4,9 @@ import assert from "node:assert";
 import crypto from "node:crypto";
 
 // Import Internal Dependencies
-import { GrafanaApi } from "../src/index.js";
-import { Datasources } from "../src/class/Datasources.class.js";
-import { Loki } from "../src/class/Loki.class.js";
+import { GrafanaApi } from "../src/index.ts";
+import { Datasources } from "../src/class/Datasources.class.ts";
+import { Loki } from "../src/class/Loki.class.ts";
 
 // CONSTANTS
 const kRemoteApiURL = "https://nodejs.org";
