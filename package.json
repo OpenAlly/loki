@@ -1,5 +1,5 @@
 {
-  "name": "@myunisoft/loki",
+  "name": "@openally/loki",
   "version": "6.1.0",
   "description": "Node.js Grafana Loki SDK",
   "main": "./dist/index.js",
@@ -19,10 +19,7 @@
     "test": "test"
   },
   "engines": {
-    "node": ">=20"
-  },
-  "publishConfig": {
-    "@myunisoft:registry": "https://registry.npmjs.org/"
+    "node": ">=24"
   },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean",
@@ -39,10 +36,10 @@
   "author": "GENTILHOMME Thomas <gentilhomme.thomas@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@openally/config.eslint": "^1.0.0",
+    "@openally/config.eslint": "2.2.0",
     "@openally/config.typescript": "^1.0.3",
-    "@types/ms": "^0.7.34",
-    "@types/node": "^22.0.0",
+    "@types/ms": "2.1.0",
+    "@types/node": "24.9.1",
     "c8": "^10.1.2",
     "glob": "^11.0.0",
     "tsup": "^8.0.2",
@@ -50,8 +47,8 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@myunisoft/httpie": "^5.0.0",
     "@openally/auto-url": "^1.0.1",
+    "@openally/httpie": "1.0.0",
     "@sigyn/logql": "^2.2.0",
     "@sigyn/pattern": "^1.1.0",
     "dayjs": "^1.11.10",

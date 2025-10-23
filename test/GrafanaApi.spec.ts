@@ -1,5 +1,5 @@
 // Import Node.js Dependencies
-import { beforeEach, describe, it } from "node:test";
+import { describe, it } from "node:test";
 import assert from "node:assert";
 import crypto from "node:crypto";
 
@@ -9,13 +9,13 @@ import { Datasources } from "../src/class/Datasources.class.js";
 import { Loki } from "../src/class/Loki.class.js";
 
 // CONSTANTS
-const remoteApiURL = "https://nodejs.org";
+const kRemoteApiURL = "https://nodejs.org";
 
 describe("GrafanaApi", () => {
   describe("constructor", () => {
     it("should instanciate sub-API", () => {
       const api = new GrafanaApi({
-        remoteApiURL
+        remoteApiURL: kRemoteApiURL
       });
 
       assert.ok(api.Datasources instanceof Datasources);
@@ -26,7 +26,7 @@ describe("GrafanaApi", () => {
       const token = crypto.randomBytes(4).toString("hex");
 
       assert.doesNotThrow(() => new GrafanaApi({
-        remoteApiURL,
+        remoteApiURL: kRemoteApiURL,
         authentication: {
           type: "bearer",
           token
@@ -36,7 +36,7 @@ describe("GrafanaApi", () => {
 
     it("should load constructor with a classic authentication", () => {
       assert.doesNotThrow(() => new GrafanaApi({
-        remoteApiURL,
+        remoteApiURL: kRemoteApiURL,
         authentication: {
           type: "classic",
           username: "foo",
@@ -47,7 +47,7 @@ describe("GrafanaApi", () => {
 
     it("should load constructor with a custom authentication", () => {
       assert.doesNotThrow(() => new GrafanaApi({
-        remoteApiURL,
+        remoteApiURL: kRemoteApiURL,
         authentication: {
           type: "custom",
           authorization: "hello world"

@@ -38,7 +38,7 @@ export class ApiCredential {
   constructor(
     authorizationOptions?: ApiCredentialAuthorizationOptions,
     userAgent?: string,
-    xScopeOrgId?: string,
+    xScopeOrgId?: string
   ) {
     this.authorization = authorizationOptions ?
       ApiCredential.buildAuthorizationHeader(authorizationOptions) :
@@ -52,7 +52,7 @@ export class ApiCredential {
       headers: {
         ...(this.authorization === null ? {} : { authorization: this.authorization }),
         ...(this.userAgent === null ? {} : { "User-Agent": this.userAgent }),
-        ...(this.xScopeOrgId === null ? {} : { "X-Scope-OrgID": this.xScopeOrgId }),
+        ...(this.xScopeOrgId === null ? {} : { "X-Scope-OrgID": this.xScopeOrgId })
       }
     };
   }

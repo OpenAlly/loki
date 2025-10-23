@@ -1,14 +1,13 @@
 // Import Node.js Dependencies
-import { after, before, beforeEach, describe, it } from "node:test";
+import { after, before, describe, it } from "node:test";
 import assert from "node:assert";
 
 // Import Third-party Dependencies
-import { MockAgent, setGlobalDispatcher, getGlobalDispatcher } from "@myunisoft/httpie";
+import { MockAgent, setGlobalDispatcher, getGlobalDispatcher } from "@openally/httpie";
 
 // Import Internal Dependencies
 import {
   GrafanaApi,
-  LogEntry,
   LokiIngestLogs,
   LokiStandardBaseResponse
 } from "../src/index.js";
@@ -138,7 +137,7 @@ describe("GrafanaApi.Loki", () => {
     });
 
     it("should return empty list of logs (using LogParser)", async() => {
-      const expectedLogs = [];
+      const expectedLogs: string[] = [];
 
       agentPoolInterceptor
         .intercept({
@@ -161,7 +160,7 @@ describe("GrafanaApi.Loki", () => {
     });
 
     it("should return empty list of logs (using NoopParser)", async() => {
-      const expectedLogs = [];
+      const expectedLogs: string[] = [];
 
       agentPoolInterceptor
         .intercept({

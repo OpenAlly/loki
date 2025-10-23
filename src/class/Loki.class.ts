@@ -1,5 +1,5 @@
 // Import Third-party Dependencies
-import * as httpie from "@myunisoft/httpie";
+import * as httpie from "@openally/httpie";
 import autoURL from "@openally/auto-url";
 import {
   LogQL,
@@ -225,7 +225,7 @@ export class Loki {
   async series<T = Record<string, string>>(
     ...match: [StreamSelector | string, ...(StreamSelector | string)[]]
   ): Promise<T[]> {
-    const uri = new URL(`loki/api/v1/series`, this.remoteApiURL);
+    const uri = new URL("loki/api/v1/series", this.remoteApiURL);
 
     // Note: Grafana API seem to want the match[] syntax
     const { data: listSeries } = await httpie.get<LokiStandardBaseResponse<T[]>>(uri, {

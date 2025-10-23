@@ -34,15 +34,15 @@
 This package is available in the Node Package Repository and can be easily installed with [npm](https://doc.npmjs.com/getting-started/what-is-npm) or [yarn](https://yarnpkg.com)
 
 ```bash
-$ npm i @myunisoft/loki
+$ npm i @openally/loki
 # or
-$ yarn add @myunisoft/loki
+$ yarn add @openally/loki
 ```
 
 ## 📚 Usage
 
 ```ts
-import { GrafanaApi } from "@myunisoft/loki";
+import { GrafanaApi } from "@openally/loki";
 import { LogQL, StreamSelector } from "@sigyn/logql";
 
 const api = new GrafanaApi({

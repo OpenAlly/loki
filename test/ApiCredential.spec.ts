@@ -1,5 +1,5 @@
 // Import Node.js Dependencies
-import { beforeEach, describe, it } from "node:test";
+import { describe, it } from "node:test";
 import assert from "node:assert";
 import crypto from "node:crypto";
 
@@ -90,7 +90,7 @@ describe("ApiCredential", () => {
       assert.deepEqual(sdk.httpOptions, {
         headers: {
           authorization: `Bearer ${token}`,
-          "X-Scope-OrgID": xScopeOrgId,
+          "X-Scope-OrgID": xScopeOrgId
         }
       });
     });

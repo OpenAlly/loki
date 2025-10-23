@@ -3,7 +3,7 @@ import { after, before, describe, it } from "node:test";
 import assert from "node:assert";
 
 // Import Third-party Dependencies
-import { MockAgent, setGlobalDispatcher, getGlobalDispatcher } from "@myunisoft/httpie";
+import { MockAgent, setGlobalDispatcher, getGlobalDispatcher } from "@openally/httpie";
 
 // Import Internal Dependencies
 import { GrafanaApi, Datasource } from "../src/index.js";

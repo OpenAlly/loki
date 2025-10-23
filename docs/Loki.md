@@ -5,7 +5,7 @@ https://grafana.com/docs/loki/latest/reference/api/
 API are accessible from the `Loki` property.
 
 ```ts
-import { GrafanaApi } from "@myunisoft/loki";
+import { GrafanaApi } from "@openally/loki";
 
 const api = new GrafanaApi({
   remoteApiURL: "https://name.loki.com"
@@ -255,7 +255,7 @@ export interface LokiIngestLogs {
 **queryRange** and **queryRangeStream** APIs allow the usage of pattern.
 
 ```ts
-import { GrafanaApi } from "@myunisoft/loki";
+import { GrafanaApi } from "@openally/loki";
 
 const api = new GrafanaApi({
   remoteApiURL: "https://name.loki.com"

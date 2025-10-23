@@ -5,7 +5,7 @@ https://grafana.com/docs/grafana/latest/developers/http_api/data_source/
 API are accessible from the `Datasources` property.
 
 ```ts
-import { GrafanaApi } from "@myunisoft/loki";
+import { GrafanaApi } from "@openally/loki";
 
 const api = new GrafanaApi({
   remoteApiURL: "https://name.loki.com"
