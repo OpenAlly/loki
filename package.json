@@ -40,7 +40,7 @@
     "@openally/config.eslint": "2.2.0",
     "@openally/config.typescript": "^1.0.3",
     "@types/ms": "2.1.0",
-    "@types/node": "24.10.1",
+    "@types/node": "24.10.2",
     "c8": "^10.1.2",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
