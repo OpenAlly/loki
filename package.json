@@ -29,6 +29,10 @@
     "test": "node --test ./test/**/*.spec.ts",
     "coverage": "c8 -r html npm test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenAlly/loki.git"
+  },
   "keywords": [
     "grafana",
     "loki",
