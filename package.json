@@ -1,6 +1,6 @@
 {
   "name": "@openally/loki",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "description": "Node.js Grafana Loki SDK",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
