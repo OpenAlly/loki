@@ -2,14 +2,10 @@
   "name": "@openally/loki",
   "version": "7.0.2",
   "description": "Node.js Grafana Loki SDK",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "type": "module",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
       "import": "./dist/index.js"
     }
   },
@@ -23,7 +19,7 @@
     "node": ">=24"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "build": "tsc",
     "lint": "eslint src test",
     "prepublishOnly": "npm run build",
     "test": "node --test ./test/**/*.spec.ts",
@@ -46,17 +42,16 @@
   "author": "GENTILHOMME Thomas <gentilhomme.thomas@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@openally/config.eslint": "2.2.0",
+    "@openally/config.eslint": "2.4.2",
     "@openally/config.typescript": "^1.0.3",
     "@types/ms": "2.1.0",
-    "@types/node": "25.5.0",
+    "@types/node": "26.1.1",
     "c8": "^11.0.0",
-    "tsup": "^8.0.2",
-    "typescript": "^5.3.3"
+    "typescript": "6.0.3"
   },
   "dependencies": {
     "@openally/auto-url": "^1.0.1",
-    "@openally/httpie": "1.1.2",
+    "@openally/httpie": "1.1.3",
     "@sigyn/logql": "^2.2.0",
     "@sigyn/pattern": "^1.1.0",
     "dayjs": "^1.11.10",
