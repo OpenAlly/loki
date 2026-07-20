@@ -46,8 +46,8 @@
     "@openally/config.typescript": "^1.0.3",
     "@types/ms": "2.1.0",
     "@types/node": "26.1.1",
-    "c8": "^11.0.0",
-    "typescript": "6.0.3"
+    "c8": "^12.0.0",
+    "typescript": "7.0.2"
   },
   "dependencies": {
     "@openally/auto-url": "^1.0.1",
