@@ -42,10 +42,10 @@
   "author": "GENTILHOMME Thomas <gentilhomme.thomas@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@openally/config.eslint": "3.0.1",
+    "@openally/config.eslint": "3.0.2",
     "@openally/config.typescript": "^1.0.3",
     "@types/ms": "2.1.0",
-    "@types/node": "26.6.1",
+    "@types/node": "26.6.2",
     "c8": "^12.0.0",
     "typescript": "7.0.2"
   },
